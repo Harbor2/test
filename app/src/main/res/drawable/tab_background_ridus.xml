@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <!-- solid用以指定内部填充色 -->
+    <solid android:color="#FFF" />
+    <!-- 圆角 -->
+    <corners android:radius="30dp" />
+
+    <!--描边属性，可以定义描边的宽度，颜色，虚实线等-->
+    <stroke
+        android:width="1.5dp"
+        android:color="@android:color/darker_gray"
+        />
+        <!--android:color="#0e88eb" />-->
+    />
+</shape>

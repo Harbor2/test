@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<item android:drawable="@drawable/tab_background_unchecked"-->
+<!--android:state_selected="false" />-->
+<!--<item android:drawable="@drawable/tab_background_checked"-->
+<!--android:state_selected="true" />-->
+<!--</selector>-->
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item android:drawable="@drawable/tablayout_select_background" android:state_selected="true"/>-->
+    <!--<item android:drawable="@drawable/tablayout_select_background" android:state_selected="false"/>-->
+<!--</selector>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true">
+
+        <!--<shape>
+            <solid android:color="#ffffff"/>
+            <corners android:topLeftRadius="10dp" android:topRightRadius="10dp" />
+        </shape>-->
+        <!--为了让TabLayout内部的Tab有间隔，暂时找不到其他设置方法，只能在背景图形里面设置间隔-->
+        <layer-list>
+            <item>
+                <shape>
+
+                    <solid android:color="@android:color/transparent"/>
+                </shape>
+            </item>
+            <item android:left="10dp" android:right="10dp">
+                <shape>
+                    <corners android:radius="20dp"/>
+                    <solid android:color="#33bcbcbc"/>
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+
+    <item android:state_selected="false">
+        <!--<shape>
+            <solid android:color="#bcbcbc"/>
+            <corners android:topLeftRadius="10dp" android:topRightRadius="10dp" />
+        </shape>-->
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@android:color/transparent"/>
+                </shape>
+            </item>
+            <item android:left="10dp" android:right="10dp">
+                <shape>
+                    <corners android:radius="20dp" />
+                    <solid android:color="#33bcbcbc"/>
+                </shape>
+
+            </item>
+
+        </layer-list>
+    </item>
+
+</selector>
