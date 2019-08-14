@@ -239,6 +239,7 @@ public class LoginActivity extends BaseActivity {
         UpdateMsg updateMsg = new UpdateMsg(getApplicationContext());
         updateMsg.writeMsg(userPhone, userPass);
         updateMsg.writeStatus(true);
+        updateMsg.writeAutoStatus(true);
     }
 
     /***

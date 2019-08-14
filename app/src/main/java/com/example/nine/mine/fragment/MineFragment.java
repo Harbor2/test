@@ -159,7 +159,6 @@ public class MineFragment extends BaseFragment {
                 getMyMsg();
             }
         });
-
     }
 
     @Override
@@ -205,19 +204,41 @@ public class MineFragment extends BaseFragment {
                 break;
             case R.id.ll_danceteam_mine:
                 //我的舞队
+                if (CacheUtils.getBoolean(getContext(),"loginstatus")) {
+
+                } else {
+                    Intent intent = new Intent(mContext, LoginActivity.class);
+                    startActivity(intent);
+                }
                 break;
             case R.id.ll_page_mine:
                 //我的主页
+                if (CacheUtils.getBoolean(getContext(),"loginstatus")) {
+
+                } else {
+                    Intent intent = new Intent(mContext, LoginActivity.class);
+                    startActivity(intent);
+                }
                 break;
             case R.id.ll_feedback_mine:
                 //反馈与帮助
-                Intent intent_feed = new Intent(mContext, FeedBackActivity.class);
-                startActivity(intent_feed);
+                if (CacheUtils.getBoolean(getContext(),"loginstatus")) {
+                    Intent intent_feed = new Intent(mContext, FeedBackActivity.class);
+                    startActivity(intent_feed);
+                } else {
+                    Intent intent = new Intent(mContext, LoginActivity.class);
+                    startActivity(intent);
+                }
                 break;
             case R.id.ll_record_mine:
                 //舞队申请记录
-                Intent intent = new Intent(mContext, Dcteam_ApreocrdActivity.class);
-                startActivity(intent);
+                if (CacheUtils.getBoolean(getContext(),"loginstatus")) {
+                    Intent intent = new Intent(mContext, Dcteam_ApreocrdActivity.class);
+                    startActivity(intent);
+                } else {
+                    Intent intent = new Intent(mContext, LoginActivity.class);
+                    startActivity(intent);
+                }
                 break;
         }
     }

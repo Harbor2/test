@@ -22,6 +22,7 @@ import com.example.nine.mine.bean.MsgcodeLogin_Bean;
 import com.example.nine.mine.mybean.MyInformation;
 import com.example.nine.utils.CacheUtils;
 import com.example.nine.utils.Check_Phonenum;
+import com.example.nine.utils.UpdateMsg;
 import com.example.nine.view.LoadView;
 import com.google.gson.Gson;
 
@@ -109,7 +110,9 @@ public class MsgLoginActivity extends Activity {
      * 登陆成功之后将状态记录
      */
     public void writeMsg(){
-        CacheUtils.putBoolean(getApplicationContext(),"loginstatus",true);
+        UpdateMsg updateMsg = new UpdateMsg(getApplicationContext());
+        updateMsg.writeAutoStatus(true);
+        updateMsg.writeStatus(true);
     }
 
     /**

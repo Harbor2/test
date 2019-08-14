@@ -37,4 +37,7 @@ public class UpdateMsg {
     public void writeStatus(Boolean status){
         CacheUtils.putBoolean(context,"loginstatus",status);
     }
+    public void writeAutoStatus(Boolean status){
+        CacheUtils.putBoolean(context,"autologin",status);
+    }
 }

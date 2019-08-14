@@ -80,7 +80,10 @@ public class MainActivity extends FragmentActivity {
         //获取保存的账号密码信息
         msg msg = new msg();
         msg.run();
-        autoLogin();
+        //判断是否需要自动登陆
+        if (CacheUtils.getBoolean(getApplicationContext(),"autologin")){
+            autoLogin();
+        }
     }
 
 
@@ -260,7 +263,6 @@ public class MainActivity extends FragmentActivity {
         //自动登陆再次验证保存的账号密码信息和服务器的密码信息是否一致
         //本地的账号密码  userPhone userPass
         if (TextUtils.isEmpty(userPhone) || TextUtils.isEmpty(userPass)) {
-            System.out.println("自动登陆的账号为  "+userPhone+"自动登陆的密码为 "+userPass);
             //首次登陆没有信息什么也不做
         } else {
             if (userPhone.equals("15226513672") && userPass.equals("123456")) {

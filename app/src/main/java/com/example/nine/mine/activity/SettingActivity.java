@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.example.nine.R;
 import com.example.nine.mine.mybean.MyInformation;
 import com.example.nine.utils.CacheUtils;
+import com.example.nine.utils.UpdateMsg;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -53,8 +54,9 @@ public class SettingActivity extends Activity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 //退出登陆之后将登陆的状态设为false
-//                MyInformation.getInstance().setLoginState(false);
-                CacheUtils.putBoolean(getApplicationContext(),"loginstatus",false);
+                UpdateMsg updateMsg = new UpdateMsg(getApplicationContext());
+                updateMsg.writeAutoStatus(false);
+                updateMsg.writeStatus(false);
                 if (onCountexitLintener != null) {
                     onCountexitLintener.onCountexit();
                 }

@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.IpSecManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -347,6 +348,7 @@ public class NewUserActivity extends BaseActivity {
         UpdateMsg updateMsg = new UpdateMsg(getApplicationContext());
         updateMsg.writeMsg(userPhone, userPass);
         updateMsg.writeStatus(true);
+        updateMsg.writeAutoStatus(true);
     }
 
     public void toastDialog() {
