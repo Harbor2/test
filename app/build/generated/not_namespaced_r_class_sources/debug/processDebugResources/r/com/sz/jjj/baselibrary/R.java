@@ -12,29 +12,29 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int anim_show = 0x7f030029;
-        public static final int defocus_color = 0x7f0300a8;
-        public static final int defocus_icon = 0x7f0300a9;
-        public static final int focus_color = 0x7f0300d4;
-        public static final int focus_icon = 0x7f0300d5;
-        public static final int is_selected = 0x7f030100;
-        public static final int text = 0x7f0301b1;
-        public static final int textsize = 0x7f0301cd;
+        public static final int anim_show = 0x7f040029;
+        public static final int defocus_color = 0x7f0400ae;
+        public static final int defocus_icon = 0x7f0400af;
+        public static final int focus_color = 0x7f0400ee;
+        public static final int focus_icon = 0x7f0400ef;
+        public static final int is_selected = 0x7f040148;
+        public static final int text = 0x7f040270;
+        public static final int textsize = 0x7f04028e;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int circular_reveal_button = 0x7f0b001e;
+        public static final int circular_reveal_button = 0x7f0c0028;
     }
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f0d0027;
+        public static final int app_name = 0x7f100027;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] CircularRevealButton = { 0x7f030029, 0x7f0300a8, 0x7f0300a9, 0x7f0300d4, 0x7f0300d5, 0x7f030100, 0x7f0301b1, 0x7f0301cd };
+        public static final int[] CircularRevealButton = { 0x7f040029, 0x7f0400ae, 0x7f0400af, 0x7f0400ee, 0x7f0400ef, 0x7f040148, 0x7f040270, 0x7f04028e };
         public static final int CircularRevealButton_anim_show = 0;
         public static final int CircularRevealButton_defocus_color = 1;
         public static final int CircularRevealButton_defocus_icon = 2;

@@ -9,7 +9,6 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
-import com.makeramen.roundedimageview.RoundedImageView;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
@@ -27,11 +26,11 @@ public class MainActivity_ViewBinding implements Unbinder {
 
     target.frameLayout = Utils.findRequiredViewAsType(source, R.id.frameLayout, "field 'frameLayout'", FrameLayout.class);
     target.rgMain = Utils.findRequiredViewAsType(source, R.id.rg_main, "field 'rgMain'", RadioGroup.class);
-    target.rbRecord = Utils.findRequiredViewAsType(source, R.id.rb_record, "field 'rbRecord'", RadioButton.class);
-    target.rbTeam = Utils.findRequiredViewAsType(source, R.id.rb_team, "field 'rbTeam'", RadioButton.class);
+    target.rbActivity = Utils.findRequiredViewAsType(source, R.id.rb_activity, "field 'rbActivity'", RadioButton.class);
+    target.rbLive = Utils.findRequiredViewAsType(source, R.id.rb_live, "field 'rbLive'", RadioButton.class);
     target.rbMine = Utils.findRequiredViewAsType(source, R.id.rb_mine, "field 'rbMine'", RadioButton.class);
-    target.ivLuzhi = Utils.findRequiredViewAsType(source, R.id.ivLuzhi, "field 'ivLuzhi'", RoundedImageView.class);
-    target.rbRecommend = Utils.findRequiredViewAsType(source, R.id.rb_recommend, "field 'rbRecommend'", RadioButton.class);
+    target.rbLuzhi = Utils.findRequiredViewAsType(source, R.id.rb_luzhi, "field 'rbLuzhi'", RadioButton.class);
+    target.rbHome = Utils.findRequiredViewAsType(source, R.id.rb_home, "field 'rbHome'", RadioButton.class);
   }
 
   @Override
@@ -43,10 +42,10 @@ public class MainActivity_ViewBinding implements Unbinder {
 
     target.frameLayout = null;
     target.rgMain = null;
-    target.rbRecord = null;
-    target.rbTeam = null;
+    target.rbActivity = null;
+    target.rbLive = null;
     target.rbMine = null;
-    target.ivLuzhi = null;
-    target.rbRecommend = null;
+    target.rbLuzhi = null;
+    target.rbHome = null;
   }
 }

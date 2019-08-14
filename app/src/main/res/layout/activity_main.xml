@@ -15,77 +15,108 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        />
 
     <RadioGroup
         android:id="@+id/rg_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/home_bottom_parent_bg"
         android:orientation="horizontal"
-        android:paddingTop="10dp"
-        android:paddingBottom="5dp">
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
 
         <RadioButton
-            android:id="@+id/rb_recommend"
+            android:id="@+id/rb_home"
             style="@style/MainButtonStyle"
-            android:paddingTop="10dp"
-            android:text="推荐"
-
             android:drawableTop="@drawable/home_button_selector"
-           />
+
+
+            android:text="首页"
+            />
         <!--android:text="推荐"-->
         <RadioButton
-            android:id="@+id/rb_record"
+            android:id="@+id/rb_activity"
             style="@style/MainButtonStyle"
-            android:paddingTop="10dp"
-            android:text="视频"
             android:drawableTop="@drawable/cart_button_selector"
+
+            android:text="活动"
 
             />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-
+        <RadioButton
+            android:id="@+id/rb_luzhi"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
 
-            android:orientation="vertical">
+            android:background="@drawable/bg_round"
+            android:button="@null"
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/ivLuzhi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/luzhi"
-                app:riv_border_color="#5500ff00"
-                app:riv_border_width="5dp"
-                app:riv_oval="true"/>
+            android:drawableTop="@drawable/add"
+            android:textSize="0sp"
+            />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ivLuzhi"
-                android:layout_centerHorizontal="true"
-                android:text="录制"
-                android:textSize="12dp"/>
-        </RelativeLayout>
+        <!--<com.makeramen.roundedimageview.RoundedImageView-->
+        <!--android:id="@+id/iv_luzhi"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/bg_round"-->
+        <!--android:padding="5dp"-->
+        <!--android:src="@drawable/add">-->
+
+
+        <!--</com.makeramen.roundedimageview.RoundedImageView>-->
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+
+        <!--android:orientation="vertical">-->
+
+        <!--<com.makeramen.roundedimageview.RoundedImageView-->
+        <!--android:id="@+id/ivLuzhi"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/luzhi"-->
+        <!--app:riv_border_color="#5500ff00"-->
+        <!--app:riv_border_width="5dp"-->
+        <!--app:riv_oval="true"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/ivLuzhi"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="录制"-->
+        <!--android:textSize="12dp"/>-->
+        <!--</RelativeLayout>-->
 
         <RadioButton
-            android:id="@+id/rb_team"
+            android:id="@+id/rb_live"
             style="@style/MainButtonStyle"
-            android:paddingTop="10dp"
-            android:text="团队"
             android:drawableTop="@drawable/type_button_selector"
+
+            android:text="直播"
             />
 
 
         <RadioButton
             android:id="@+id/rb_mine"
             style="@style/MainButtonStyle"
-            android:paddingTop="10dp"
-            android:text="团队"
             android:drawableTop="@drawable/user_button_selector"
+
+            android:text="我的"
             />
     </RadioGroup>
 

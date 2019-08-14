@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mine.activity.MyInformationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--头像布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/titlebackground">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/mine_leftarrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:text="我的头像"
+                android:textSize="18sp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/rv_mymsg_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/nophoto"
+                app:riv_oval="true" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#bebebe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bebebe" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="我的昵称" />
+                <EditText
+                    android:id="@+id/et_mymsg_name"
+                    android:layout_width="250dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:textSize="15sp"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="20"
+                    android:hint="请输入昵称"
+                    android:gravity="right|center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bebebe" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="手机号码" />
+                <EditText
+                    android:id="@+id/et_mymsg_phone"
+                    android:hint="请输入电话号码"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="250dp"
+                    android:singleLine="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="20"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bebebe" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="我的住址" />
+                <TextView
+                    android:id="@+id/tv_mymsg_address"
+                    android:hint="请选择您的住址"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="250dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bebebe" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="我的性别" />
+                <TextView
+                    android:id="@+id/tv_mymsg_sex"
+                    android:hint="请选择性别"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="250dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:maxLength="20"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bebebe" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="出生日期" />
+                <TextView
+                    android:id="@+id/tv_mymsg_birth"
+                    android:hint="请选择出生年月"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="250dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bebebe" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:text="身份证号码" />
+                <EditText
+                    android:id="@+id/et_mymsg_cardcode"
+                    android:hint="请输入身份证号码"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="250dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:textSize="15sp"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="20"
+                    android:layout_height="match_parent"
+                    android:background="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_savemsg"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mine_btn_style_1"
+            android:text="保存信息"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,39 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.nine"
-    android:versionCode="1"
-    android:versionName="1.0" >
-
-    <uses-sdk
-        android:minSdkVersion="18"
-        android:targetSdkVersion="29" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <application
-        android:allowBackup="true"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:debuggable="true"
-        android:icon="@mipmap/logo"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/logo"
-        android:supportsRtl="true"
-        android:testOnly="true"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.example.nine.MainActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:launchMode="singleTask" >
-        </activity>
-        <activity android:name="com.example.nine.LaunchActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
-
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.nine" android:versionName="1.0" android:versionCode="1">
+  <uses-sdk android:targetSdkVersion="29" android:minSdkVersion="18"/>
+  <uses-permission android:name="android.permission.INTERNET" xmlns:android="http://schemas.android.com/apk/res/android"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" xmlns:android="http://schemas.android.com/apk/res/android"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:allowBackup="true" android:testOnly="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/logo" android:supportsRtl="true" android:debuggable="true" android:label="@string/app_name" android:name="com.mob.MobApplication" android:theme="@style/AppTheme" android:networkSecurityConfig="@xml/network_security_config" android:icon="@mipmap/logo" xmlns:android="http://schemas.android.com/apk/res/android">
+    <activity android:name="com.example.nine.mine.activity.FeedBack_ReplyActivity"/>
+    <activity android:name="com.example.nine.mine.activity.FeedBackActivity"/>
+    <activity android:name="com.example.nine.mine.activity.Dcteam_ApreocrdActivity" xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <activity android:name="com.example.nine.mine.activity.MsgLoginActivity"/>
+    <activity android:name="com.example.nine.mine.activity.MyInformationActivity"/>
+    <activity android:name="com.example.nine.mine.activity.ChangePassActivity" xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <activity android:name="com.example.nine.mine.activity.SettingActivity"/>
+    <activity android:name="com.example.nine.mine.activity.SignActivity"/>
+    <activity android:name="com.example.nine.mine.activity.NewUserActivity" xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <activity android:name="com.example.nine.mine.activity.LoginActivity"/>
+    <activity android:launchMode="singleTask" android:name="com.example.nine.MainActivity" android:configChanges="orientation|screenSize|keyboardHidden"/>
+    <activity android:name="com.example.nine.LaunchActivity" xmlns:android="http://schemas.android.com/apk/res/android">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:screenOrientation="portrait" android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:exported="true"/>
+    <activity android:screenOrientation="portrait" android:name="com.yalantis.ucrop.UCropActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+    <provider android:name="androidx.core.content.FileProvider" android:grantUriPermissions="true" android:exported="false" android:authorities="com.example.nine.fileprovider">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+    </provider>
+    <meta-data xmlns:tools="http://schemas.android.com/tools" android:name="Mob-AppKey" android:value="2bfaea2836fea" tools:node="merge"/>
+    <meta-data xmlns:tools="http://schemas.android.com/tools" android:name="Mob-AppSecret" android:value="6e1bef580d57f54529dd0853038bb612" tools:node="merge"/>
+    <activity xmlns:tools="http://schemas.android.com/tools" android:windowSoftInputMode="stateHidden|adjustResize" android:name="com.mob.tools.MobUIShell" android:configChanges="keyboardHidden|orientation|screenSize" android:theme="@android:style/Theme.Translucent.NoTitleBar" tools:node="merge"/>
+  </application>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.PACKAGE_USAGE_STATS"/>
+  <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.READ_CONTACTS"/>
 </manifest>

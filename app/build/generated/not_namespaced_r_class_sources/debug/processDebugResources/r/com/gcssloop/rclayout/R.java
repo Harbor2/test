@@ -12,20 +12,20 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int clip_background = 0x7f030078;
-        public static final int round_as_circle = 0x7f030161;
-        public static final int round_corner = 0x7f030162;
-        public static final int round_corner_bottom_left = 0x7f030163;
-        public static final int round_corner_bottom_right = 0x7f030164;
-        public static final int round_corner_top_left = 0x7f030165;
-        public static final int round_corner_top_right = 0x7f030166;
-        public static final int stroke_color = 0x7f03018a;
-        public static final int stroke_width = 0x7f03018b;
+        public static final int clip_background = 0x7f04007b;
+        public static final int round_as_circle = 0x7f0401e5;
+        public static final int round_corner = 0x7f0401e6;
+        public static final int round_corner_bottom_left = 0x7f0401e7;
+        public static final int round_corner_bottom_right = 0x7f0401e8;
+        public static final int round_corner_top_left = 0x7f0401e9;
+        public static final int round_corner_top_right = 0x7f0401ea;
+        public static final int stroke_color = 0x7f040249;
+        public static final int stroke_width = 0x7f04024a;
     }
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] RCAttrs = { 0x7f030078, 0x7f030161, 0x7f030162, 0x7f030163, 0x7f030164, 0x7f030165, 0x7f030166, 0x7f03018a, 0x7f03018b };
+        public static final int[] RCAttrs = { 0x7f04007b, 0x7f0401e5, 0x7f0401e6, 0x7f0401e7, 0x7f0401e8, 0x7f0401e9, 0x7f0401ea, 0x7f040249, 0x7f04024a };
         public static final int RCAttrs_clip_background = 0;
         public static final int RCAttrs_round_as_circle = 1;
         public static final int RCAttrs_round_corner = 2;
@@ -35,7 +35,7 @@ public final class R {
         public static final int RCAttrs_round_corner_top_right = 6;
         public static final int RCAttrs_stroke_color = 7;
         public static final int RCAttrs_stroke_width = 8;
-        public static final int[] RCImageView = { 0x7f030078, 0x7f030161, 0x7f030162, 0x7f030163, 0x7f030164, 0x7f030165, 0x7f030166, 0x7f03018a, 0x7f03018b };
+        public static final int[] RCImageView = { 0x7f04007b, 0x7f0401e5, 0x7f0401e6, 0x7f0401e7, 0x7f0401e8, 0x7f0401e9, 0x7f0401ea, 0x7f040249, 0x7f04024a };
         public static final int RCImageView_clip_background = 0;
         public static final int RCImageView_round_as_circle = 1;
         public static final int RCImageView_round_corner = 2;
@@ -45,7 +45,7 @@ public final class R {
         public static final int RCImageView_round_corner_top_right = 6;
         public static final int RCImageView_stroke_color = 7;
         public static final int RCImageView_stroke_width = 8;
-        public static final int[] RCRelativeLayout = { 0x7f030078, 0x7f030161, 0x7f030162, 0x7f030163, 0x7f030164, 0x7f030165, 0x7f030166, 0x7f03018a, 0x7f03018b };
+        public static final int[] RCRelativeLayout = { 0x7f04007b, 0x7f0401e5, 0x7f0401e6, 0x7f0401e7, 0x7f0401e8, 0x7f0401e9, 0x7f0401ea, 0x7f040249, 0x7f04024a };
         public static final int RCRelativeLayout_clip_background = 0;
         public static final int RCRelativeLayout_round_as_circle = 1;
         public static final int RCRelativeLayout_round_corner = 2;
