@@ -4,7 +4,7 @@
   <uses-permission android:name="android.permission.CAMERA"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" xmlns:android="http://schemas.android.com/apk/res/android"/>
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-  <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:allowBackup="true" android:testOnly="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/logo" android:supportsRtl="true" android:debuggable="true" android:label="@string/app_name" android:name="com.mob.MobApplication" android:theme="@style/AppTheme" android:networkSecurityConfig="@xml/network_security_config" android:icon="@mipmap/logo" xmlns:android="http://schemas.android.com/apk/res/android">
+  <application android:supportsRtl="true" android:debuggable="true" android:label="@string/app_name" android:name="com.mob.MobApplication" android:theme="@style/AppTheme" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/logo" android:allowBackup="true" android:usesCleartextTraffic="true" android:roundIcon="@mipmap/logo" xmlns:android="http://schemas.android.com/apk/res/android">
     <activity android:name="com.example.nine.mine.activity.FeedBack_ReplyActivity"/>
     <activity android:name="com.example.nine.mine.activity.FeedBackActivity"/>
     <activity android:name="com.example.nine.mine.activity.Dcteam_ApreocrdActivity" xmlns:android="http://schemas.android.com/apk/res/android"/>
